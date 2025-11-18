@@ -1,0 +1,196 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【您的姓名】 - 個人作品集</title>
+    <style>
+        /* --- Vibe Coding: CSS 樣式定義 (現代科技感 + 簡潔) --- */
+
+        :root {
+            --bg-color: #1a1a2e; /* 深色背景 */
+            --text-color: #e4e4f0; /* 淺色文字 */
+            --accent-color: #ff6a9e; /* 亮粉紅色作為科技點綴色 */
+            --card-bg: #2b2c45; /* 卡片背景色 */
+            --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-stack);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding-top: 60px; /* 為固定導航列預留空間 */
+            line-height: 1.6;
+        }
+
+        /* 導航列 Vibe */
+        header {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            padding: 15px 0;
+            position: fixed; /* 固定在頂部 */
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+            nav a {
+                color: var(--text-color);
+                text-decoration: none;
+                margin-left: 25px;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+
+                nav a:hover {
+                    color: var(--accent-color); /* 滑鼠滑過時顯示科技點綴色 */
+                }
+
+        /* 主要內容 Vibe */
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid var(--card-bg);
+        }
+
+        h1, h2, h3 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* 專案卡片 Vibe (卡片式展示) */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+            .project-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            }
+
+            .project-card h3 {
+                color: var(--text-color);
+                border-bottom: 1px dashed var(--accent-color);
+                padding-bottom: 5px;
+                margin-top: 0;
+            }
+
+            .project-card p {
+                font-size: 0.9em;
+                color: #b1b1c3;
+            }
+
+            .project-card a {
+                color: var(--accent-color);
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+        /* 教育和技能區塊 Vibe */
+        .list-item {
+            background-color: var(--card-bg);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--accent-color);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div style="font-size: 1.2em; font-weight: bold;">【您的姓名】Portfolio</div>
+            <div>
+                <a href="#about">關於我</a>
+                <a href="#education">教育背景</a>
+                <a href="#projects">專案成果</a>
+                <a href="#skills">技能</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>關於我</h2>
+            <p>你好！我是一名剛畢業的碩士生，專注於 [您的研究領域，例如：機器學習與自然語言處理]。我對透過技術解決實際問題充滿熱情。本網站記錄了我在大學與研究所期間所完成的專案與學術成果。</p>
+        </section>
+
+        <section id="education">
+            <h2>教育背景</h2>
+            <div class="list-item">
+                <h3>[研究所名稱] - [科系名稱]</h3>
+                <p>碩士學位 | [年份範圍，例如：2023 - 2025]</p>
+            </div>
+            <div class="list-item">
+                <h3>[大學名稱] - [科系名稱]</h3>
+                <p>學士學位 | [年份範圍，例如：2019 - 2023]</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>專案成果</h2>
+            <div class="projects-grid">
+
+                <div class="project-card">
+                    <h3>專案名稱一：[填寫專案一的名稱]</h3>
+                    <p>**您的角色**：[填寫您在專案中的職責]</p>
+                    <p>**簡述**：這個專案旨在 [簡短描述專案目標和成果]。使用了 [主要技術]。</p>
+                    <a href="project1_detail.html">查看詳細列表與成果連結 »</a>
+                </div>
+
+                <div class="project-card">
+                    <h3>專案名稱二：[填寫專案二的名稱]</h3>
+                    <p>**您的角色**：[填寫您在專案中的職責]</p>
+                    <p>**簡述**：這是一個 [填寫專案類型，例如：畢業設計或競賽作品]，主要聚焦在 [解決的問題]。</p>
+                    <a href="#">查看詳細列表與成果連結 »</a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>技能樹</h2>
+            <p>以下是我掌握的主要工具與技術：</p>
+            <div class="list-item">
+                <strong>程式語言：</strong> Python (熟練), Java (中等), JavaScript (基礎)
+            </div>
+            <div class="list-item">
+                <strong>研究領域：</strong> 深度學習, 影像處理, 自然語言處理 (NLP)
+            </div>
+            <div class="list-item">
+                <strong>工具/框架：</strong> TensorFlow, PyTorch, Git, Docker
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

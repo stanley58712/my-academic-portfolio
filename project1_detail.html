@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【您的姓名】 - 個人作品集</title>
+    <style>
+        /* --- Vibe Coding: CSS 樣式定義 (現代科技感 + 簡潔) --- */
+
+        :root {
+            --bg-color: #1a1a2e; /* 深色背景 */
+            --text-color: #e4e4f0; /* 淺色文字 */
+            --accent-color: #ff6a9e; /* 亮粉紅色作為科技點綴色 */
+            --card-bg: #2b2c45; /* 卡片背景色 */
+            --font-stack: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            font-family: var(--font-stack);
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding-top: 60px; /* 為固定導航列預留空間 */
+            line-height: 1.6;
+        }
+
+        /* 導航列 Vibe */
+        header {
+            background-color: var(--card-bg);
+            color: var(--text-color);
+            padding: 15px 0;
+            position: fixed; /* 固定在頂部 */
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+            nav a {
+                color: var(--text-color);
+                text-decoration: none;
+                margin-left: 25px;
+                font-weight: bold;
+                transition: color 0.3s;
+            }
+
+                nav a:hover {
+                    color: var(--accent-color); /* 滑鼠滑過時顯示科技點綴色 */
+                }
+
+        /* 主要內容 Vibe */
+        main {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        section {
+            padding: 60px 0;
+            border-bottom: 1px solid var(--card-bg);
+        }
+
+        h1, h2, h3 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        /* 專案卡片 Vibe (卡片式展示) */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+            .project-card:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+            }
+
+            .project-card h3 {
+                color: var(--text-color);
+                border-bottom: 1px dashed var(--accent-color);
+                padding-bottom: 5px;
+                margin-top: 0;
+            }
+
+            .project-card p {
+                font-size: 0.9em;
+                color: #b1b1c3;
+            }
+
+            .project-card a {
+                color: var(--accent-color);
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+        /* 教育和技能區塊 Vibe */
+        .list-item {
+            background-color: var(--card-bg);
+            padding: 15px;
+            margin-bottom: 10px;
+            border-left: 4px solid var(--accent-color);
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div style="font-size: 1.2em; font-weight: bold;">【您的姓名】Portfolio</div>
+            <div>
+                <a href="index.html">回首頁</a>
+            </div>
+        </nav>
+    </header>
+
+    <main style="max-width: 800px; margin: 50px auto; padding-top: 50px;">
+        <h2>專案名稱一：[填寫專案一的名稱]</h2>
+        <p>日期：[專案起迄時間]</p>
+        <p>摘要：[更詳細的專案摘要]</p>
+
+        <h3>🚀 專案成果與貢獻列表</h3>
+        <ul>
+            <li>**貢獻一**：[使用粗體強調] 詳細說明您在這個點上做了什麼，使用了哪些技術。</li>
+            <li>**貢獻二**：[使用粗體強調] 詳細說明您在這個點上做了什麼，達成了什麼量化成果。</li>
+            <li>**成果連結**：<a href="[您的GitHub或Demo連結]" target="_blank" style="color: var(--accent-color);">GitHub 程式碼連結</a></li>
+        </ul>
+
+    </main>
+
+</body>
+</html>
